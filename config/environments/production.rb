@@ -5,7 +5,6 @@ Rails.application.configure do
   config.hosts << "ngendika-be-production.up.railway.app"
   # Code is not reloaded between requests.
   config.cache_classes = true
-  config.action_cable.url = "wss://https//ngendika-be-production.up.railway.app/cable"  
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
@@ -36,8 +35,8 @@ Rails.application.configure do
 
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
-  # config.action_cable.url = "wss://example.com/cable"
-  # config.action_cable.allowed_request_origins = [ "http://example.com", /http:\/\/example.*/ ]
+   config.action_cable.url = "wss://https://ngendika-be-production.up.railway.app/"
+   config.action_cable.allowed_request_origins = [ "https://ngendika-fe.vercel.app/", /http:\/\/ngendika-fe.vercel.app.*/ ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
