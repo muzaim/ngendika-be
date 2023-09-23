@@ -5,6 +5,7 @@ Rails.application.configure do
   config.hosts << "ngendika-be-production.up.railway.app"
   # Code is not reloaded between requests.
   config.cache_classes = true
+  config.action_cable.url = "wss://https//ngendika-be-production.up.railway.app/cable"  
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
